@@ -1,0 +1,120 @@
+html {
+	height:100%;
+}
+body {
+	font-family:Arial;
+	margin:0px;
+	background-color:#384980;
+	height:100%;
+}
+.strona {
+	margin:auto;
+	width:65%;
+	padding:0;
+	box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.50);
+	border-radius: 0px 0px 10px 10px;
+}
+header {
+	margin:auto;
+	width:100%;
+	height:200px;
+	padding:0;
+	background-color:#3D6AFF;
+	margin-bottom:5px;
+}
+.banner {
+	width:95%;
+	margin:0;
+	background-color:white;
+	height:130px;
+	background-image:url(grafika/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom 30% center;
+	background-size: cover;
+	padding-top:30px;
+	padding-left:5%;
+	font-size:50px;
+	text-shadow: 1px 1px 15px black;
+	color:white;
+}
+.pole_przyciskow {
+	width:100%;
+	margin:0;
+	height:40px;
+	text-align:center;
+	box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.56);
+}
+a:visited{
+	color:white;
+	text-decoration:none;
+}
+a{
+	color:white;
+	text-decoration:none;
+}
+.przycisk{
+	margin-left:20px;
+	margin-right:20px;
+	text-align:center;
+	font-size:16px;
+	line-height:40px;
+}
+.przycisk:hover{
+	box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.50);
+}
+main {
+	padding:15px 5% 25px 5%;
+	margin:auto;
+	width:90%;
+	height:570px;
+	background-color:#8AA5FF;
+	margin-bottom:5px;
+	text-align:center;
+	border-radius: 0px 0px 10px 10px;
+	color:#3054C7;
+	font-size:18px;
+}
+footer {
+	margin:auto;
+	width:100%;
+	height:30px;
+	padding:0;
+	line-height: 30px;
+	text-align:center;
+	font-size:11px;
+	color:white;
+}
+img {
+	border:0.5px solid grey;
+}
+.autor {
+	display: inline-block;
+	margin:auto;
+	width:400px;
+	text-align:center;	
+}
+h2, h5 {
+	margin: -2px;
+}
+.art {
+	margin:auto;
+	margin-bottom:15px;
+	text-align:left;
+	font-size:45px;
+	width:80%;
+	padding:10px;
+	border:2px solid gray;
+}
+.art:hover {
+	text-decoration:underline;
+	background-color:#384980;
+	color:white;
+}
+.kalkulator {
+	border-radius: 10px;
+	padding:20px;
+	color:white;
+	margin:auto;
+	background-color:#3D6AFF;
+	width:600px;
+}

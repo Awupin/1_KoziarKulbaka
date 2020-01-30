@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>TwójMotor.pl</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="strona">
+			<header>
+			<div class="banner"><a href="index.html">TwójMotor.pl</a></div>
+			<div class="pole_przyciskow">
+				<a class="przycisk" href="index.html">Strona główna</a>|
+				<a class="przycisk" href="newsy.html">Aktualności</a>|
+				<a class="przycisk" href="galeria.html">Galeria</a>|
+				<a class="przycisk" href="autorzy.html">Autorzy</a>|
+				<a class="przycisk" href="spalanie.html">Kalkulator spalania</a>
+			</div>
+			</header>
+			<main>
+			<h1>Kalkulator spalania</h1>
+			<h4>Kalkulator wymaga zatankowania samochodu do pełna dwa razy, proszę wziąć to pod uwagę podczas używania!</h4>
+			<h3>Instrukcja obsługi</h3>
+			<ol>
+			<li>Zatankuj samochód do pełna i zapisz przebieg</li>
+			<li>Przejedź dowolną ilość kilometrów (im więcej, tym dokładniejszy będzie wynik)</li>
+			<li>Zatankuj ponownie do pełna, zapisz ilosć litrów z dystrybutora oraz przebieg podczas tankowania</li>
+			<li>Wprowadź dane do kalkulatora online</li>
+			</ol>
+			<div class="kalkulator">
+			<form name="formularz">
+			Przebieg samochodu po zatankowaniu do pełna: <input type="number" id="przebieg1"><br><br>
+			Przebieg samochodu po ponownym zatankowaniu: <input type="number" id="przebieg2"><br><br>
+			Zatankowana ilość litrów na dystrybutorze: <input type="number" id="litry"><br><br>
+			<input type="button" onclick="spalanie()" value="OBLICZ SPALANIE">
+			</form><br>
+			Wynik = <span style="font-size:20px;" id="wynik">0</span> l/100km
+			</div>
+			<script>
+				function spalanie() {
+				var przebieg1 = document.getElementById("przebieg1").value;
+				var przebieg2 = document.getElementById("przebieg2").value;
+				var litry = document.getElementById("litry").value;
+				var wynik = 100*(litry/(przebieg2-przebieg1));
+				wynik = (Math.round(wynik * 100)/100).toFixed(2);
+				document.getElementById("wynik").innerHTML = wynik;
+				}
+			</script>
+			</main>
+			<footer>
+			Autorzy: Jakub Koziar numer indeksu: 25025, Adrian Kulbaka numer indeksu: 25027
+			</footer>
+		</div>
+	</body>
+</html>
